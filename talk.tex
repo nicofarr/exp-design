@@ -1,0 +1,284 @@
+\documentclass[xcolor=dvipsnames,english]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage[usestackEOL]{stackengine}
+\usepackage{multirow}
+\usepackage{graphicx,tabularx}
+\usepackage{color}
+\usepackage{pgfpages}
+\usepackage[defaultsans]{cantarell}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{makecell}
+\usepackage[usestackEOL]{stackengine}
+\usepackage{pgfplots}
+\usepackage[lofdepth,lotdepth]{subfig}
+\usepackage{xspace}
+\usetikzlibrary{arrows}
+\usepackage{media9}
+
+\definecolor{imtatlantique}{rgb}{0.005,0.715,0.867}
+\usecolortheme[named=imtatlantique]{structure}
+\setbeamercolor{normal text}{bg=white,fg=black}
+\mode<presentation> {
+  \usetheme{Madrid}
+  \setbeamercovered{transparent}
+}
+\setbeamertemplate{items}[square]
+\setbeamertemplate{section in toc}[square]
+
+%\AtBeginSection[]{\begin{frame}<beamer>{Plan}\addtocounter{framenumber}{-1}\tableofcontents[currentsection]\end{frame}}
+\makeatletter
+\providecommand{\beamer@slideinframe}{0}%
+\tikzset{highlight/.code={\ifnum#1=\beamer@slideinframe \tikzset{draw=orange,text=orange}\fi},highlight/.value required}
+\makeatother
+\definecolor{aquamarine}{rgb}{0,0.9,1}
+\definecolor{orange}{rgb}{1,0.65,0.12}
+\definecolor{salmon}{rgb}{1,0.5,0.5}
+\definecolor{cyan}{rgb}{0,0.7,1}
+\author[IMT-Atlantique]{Nicolas Farrugia}
+\institute[]{\includegraphics[width=3cm]{Fig/logoimt.png}\hspace{5mm}\includegraphics[width=3cm]{Fig/logobrain.pdf}}
+\date{UE SHS , Neurosciences et Musique, 2024}
+
+\title[Experimental design]{Introduction to Experimental Design}
+
+\begin{document}
+\pgfplotsset{compat=1.16}
+\begin{frame}
+  \maketitle
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Plan}
+  \tableofcontents
+
+\end{frame}
+
+
+\section{Introduction}
+
+
+\subsection{Cognitive Neurosciences and Engineering}
+\begin{frame}
+\frametitle{Cognitive Neurosciences and Engineering}
+\begin{itemize}
+\item<1-> Cognitive neurosciences is the scientific field that is concerned with the study of the biological processes and aspects that underlie cognition, with a specific focus on the neural connections in the brain which are involved in mental processes.
+\item <2-> It addresses the questions of how cognitive activities are affected or controlled by neural circuits in the brain.
+\end{itemize}
+\end{frame}
+
+\subsection{What is experimental design?}
+
+\begin{frame}
+\frametitle{What is experimental design?}
+\begin{itemize}
+\item<1-> An experimental design is a planned experiment set up to test the validity of a hypothesis.
+\item <2-> An experimental design is a way to carefully plan experiments in advance.
+\end{itemize}
+\end{frame}
+
+
+\subsection{Cognitive neurosciences and Music}
+
+\begin{frame}
+  \frametitle{Cognitive neurosciences and Music}
+\end{frame}
+
+\section{Fundamentals of experimental design}
+\subsection{Dependent and independent variables}
+
+\begin{frame}
+  \frametitle{Fundamentals of experimental design}
+\end{frame}
+
+\subsection{Experimental groups and control groups}
+
+\begin{frame}
+  \frametitle{Experimental groups}
+\end{frame}
+
+\subsection{Types of experimental design}
+
+\begin{frame}
+  \frametitle{Types of experimental design}
+\end{frame}
+
+\section{Examples}
+\subsection{Reading time ! Cognitive Neurosciences studies}
+
+\begin{frame}
+  \frametitle{Articles}
+\end{frame}
+
+\subsection{Discussion}
+
+\begin{frame}
+  \frametitle{Discussion}
+\end{frame}
+
+
+\section{Experimental design in practice}
+\subsection{Practice time ! Design your own experiment}
+
+\begin{frame}
+  \frametitle{Design your own experiment}
+\end{frame}
+
+\subsection{Presentations / Discussion}
+
+\begin{frame}
+  \frametitle{Presentations / Discussion}
+\end{frame}
+
+
+\section{Conclusion}
+\subsection{Wrap-up}
+
+\begin{frame}
+  \frametitle{Wrap-up}
+\end{frame}
+
+\subsection{What's next ?}
+
+
+\begin{frame}
+  \frametitle{What's next ?}
+\end{frame}
+
+% \begin{frame}
+% \frametitle{Introduction}
+% \begin{itemize}
+% \item<1-> What is an experiment?
+% \item <2-> What is an experimental design?
+% \item <3-> What is a control group?
+% \item <4-> What is a placebo?
+% \item <5-> What is a double-blind experiment?
+% \item <6-> What is a single-blind experiment?
+% \item <7-> What is a between-subjects experiment?
+% \item <8-> What is a within-subjects experiment?
+% \item <9-> What is a mixed design experiment?
+% \item <10-> What is a counterbalanced experiment?
+% \item <11-> What is a repeated measures experiment?
+% \item <12-> What is a matched pairs experiment?
+% \item <13-> What is a factorial experiment?
+% \item <14-> What is a confounding variable?
+% \item <15-> What is a covariate?
+% \item <16-> What is a random variable?
+% \item <17-> What is a random effect?
+% \item <18-> What is a fixed effect?
+% \end{itemize}
+% \end{frame}
+
+
+% \section{What is an experiment?}
+% \begin{frame}
+% \frametitle{What is an experiment?}
+% \begin{itemize}
+% \item<1-> An experiment is a procedure carried out to support, refute, or validate a hypothesis.
+% \item <2-> Experiments provide insight into cause-and-effect by demonstrating what outcome occurs when a particular factor is manipulated.
+% \item <3-> Experiments vary greatly in their goal and scale, but always rely on repeatable procedure and logical analysis of the results.
+% \item <4-> There also exists natural experimental studies.
+% \item <5-> In an experiment, an independent variable (the cause) is manipulated and the dependent variable (the effect) is measured; any extraneous variables are controlled.
+% \item <6-> An experiment is a type of research method in which you manipulate one or more independent variables and measure their effect on one or more dependent variables.
+% \item <7-> The goal of an experiment is to determine whether the independent variable causes a change in the dependent variable.
+% \end{itemize}
+% \end{frame}
+
+% \section{What is an experimental design?}
+% \begin{frame}
+% \frametitle{What is an experimental design?}
+% \begin{itemize}
+% \item<1-> An experimental design is a planned experiment set up to test the validity of a hypothesis.
+% \item <2-> An experimental design is a way to carefully plan experiments in advance.
+% \item <3-> Types of experimental design:
+% \item <4-> \begin{itemize}
+% \item <4-> Between-subjects design
+% \item <5-> Within-subjects design
+% \item <6-> Mixed design
+% \end{itemize}
+% \end{itemize}
+% \end{frame}
+
+% \section{What is a control group?}
+% \begin{frame}
+% \frametitle{What is a control group?}
+% \begin{itemize}
+% \item<1-> A control group is a group separated from the rest of the experiment such that the independent variable being tested cannot influence the results.
+% \item <2-> This isolates the independent variable's effects on the experiment and can help rule out alternative explanations of the experimental results.
+% \item <3-> A control group can be identified by:
+% \item <4-> \begin{itemize}
+% \item <4-> Placebo effect
+% \item <5-> Hawthorne effect
+% \item <6-> Experimenter's bias
+% \item <7-> Demand characteristics
+% \item <8-> Order effects
+% \item <9-> Practice effects
+% \item <10-> Fatigue effects
+% \item <11-> Carry-over effects
+% \item <12-> Confounding variables
+% \end{itemize}
+% \end{itemize}
+% \end{frame}
+
+
+
+
+%Dernière frame numérotée avant ceci
+\appendix
+\newcounter{finalframe}
+\setcounter{finalframe}{\value{framenumber}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Backup slides 
+
+
+%Juste avant la fin du document
+\setcounter{framenumber}{\value{finalframe}}
+
+\end{document}
