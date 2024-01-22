@@ -44,9 +44,9 @@
 \definecolor{cyan}{rgb}{0,0.7,1}
 \author[IMT-Atlantique]{Nicolas Farrugia}
 \institute[]{\includegraphics[width=3cm]{Fig/logoimt.png}\hspace{5mm}\includegraphics[width=3cm]{Fig/logobrain.pdf}}
-\date{UE SHS , Neurosciences et Musique, 2024}
+\date{UE SHS, Neurosciences et Musique, 2024\\ \url{https://github.com/nicofarr/exp-design}}
 
-\title[Experimental design]{Introduction to Experimental Design}
+\title[Experimental design]{Introduction à la conception expérimentale}
 
 \begin{document}
 \pgfplotsset{compat=1.16}
@@ -55,60 +55,292 @@
 \end{frame}
 
 
+\begin{frame}
+  \frametitle{Positionnement du cours}
+  Séances : 
+  \begin{enumerate}
+  \item 16/01 matin : Neurosciences et neuromythes (D. Toquet).\\ après-midi : Pratique Musicale (C. Rocher)
+  \item \alert{23/01 matin : Introduction to Experimental Design (N. Farrugia).} \\ après-midi : Pratique Musicale (C. Rocher)
+  \item 30/01 Expériences EEG
+  \item 06/02 matin : Analyse de données EEG (N. Farrugia). \\après-midi : Pratique Musicale (C. Rocher)
+  \item 13/02 soir : restitution au Cabaret Vauban 
+  \end{enumerate}
+  \end{frame}
+
+  
+
+  \section{Contexte}
+
 
 \begin{frame}
   \frametitle{Plan}
-  \tableofcontents
+  
+  \only<1>{\tableofcontents}
+  \only<2>{\tableofcontents[currentsection]}
+  
 
 \end{frame}
 
 
-\section{Introduction}
+
+% \subsection{Cognitive Neurosciences and Engineering}
+% \begin{frame}
+% \frametitle{Cognitive Neurosciences and Engineering}
+% \begin{itemize}
+% \item<1-> Cognitive neurosciences is the scientific field that is concerned with the study of the biological processes and aspects that underlie cognition, with a specific focus on the neural connections in the brain which are involved in mental processes.
+% \item <2-> It addresses the questions of how cognitive activities are affected or controlled by neural circuits in the brain.
+% \end{itemize}
+% \end{frame}
+
+% \subsection{What is experimental design?}
+
+% \begin{frame}
+% \frametitle{What is experimental design?}
+% \begin{itemize}
+% \item<1-> An experimental design is a planned experiment set up to test the validity of a hypothesis.
+% \item <2-> An experimental design is a way to carefully plan experiments in advance.
+% \end{itemize}
+% \end{frame}
 
 
-\subsection{Cognitive Neurosciences and Engineering}
+\subsection{Musique et Neurosciences}
+
 \begin{frame}
-\frametitle{Cognitive Neurosciences and Engineering}
+  \frametitle{Neuroscience et musique}
+  \only<1>{
+    \begin{center}
+          \includegraphics[width=0.8\textwidth]{Fig/whymusic2.png}
+    \end{center}
+    }
+    \only<2>{
+    La musique stimule un vaste réseau cérébral
+    \begin{center}
+          \includegraphics[width=0.8\textwidth]{Fig/zatorre.jpg}
+    \end{center}
+    
+    }
+    \only<3>{
+    Musique et plasticité
+    \begin{center}
+          \includegraphics[width=0.8\textwidth]{Fig/musictraining.png}
+    \end{center}
+    \tiny{Groussard et al. 2014, Brain and Cognition. See also Giacosa et al. 2016, Neuroimage}
+    }
+
+\end{frame}
+
+
+\subsection{Méthodes en neurosciences cognitives}
+
+\begin{frame}
+  \frametitle{Méthodes}
+
+  \only<1>
+  {
+    \begin{center}
+            \includegraphics[width=0.8\textwidth]{Fig/fmri.jpg}
+      \end{center}
+  }
+
+\only<2>{
+
+\begin{center}
+          \includegraphics[width=0.8\textwidth]{Fig/eeg.jpg}
+    \end{center}
+}
+
+\end{frame}
+
+
+\subsection{Electroencéphalographie (EEG)}
+\begin{frame}
+  \frametitle{Electroencéphalographie (EEG)}
+
+\only<1>{
+Une vue d'ensemble de l'origine (probable) de l'EEG.
+
+\begin{center}
+\includegraphics[width=\textwidth]{images/baillet.png}
+\end{center}
+\tiny{Baillet, Sylvain, John C. Mosher, and Richard M. Leahy. “Electromagnetic brain mapping.” IEEE Signal processing magazine 18.6 (2001): 14-30.}
+}
+
+\only<2>{
+
+\begin{columns}
+ \column{.5\linewidth}
+ Quelques caractéristiques clés de l'EEG
+ 	\begin{itemize}
+ 		\item Tension (V) entre une électrode sur le scalp et une référence
+    \item Propagation du champ électrique dans plusieurs milieux
+ 		\item Signal résultant de l'activité coordonnée de groupes de millons de neurones
+ 		\item De 0.1 à 100 Hz, de l'ordre de 0.025 à 0.1 mV 
+ 		\item Très sensible aux artefacts
+ 	\end{itemize}
+
+
+ \column{.5\linewidth}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{images/nunez.jpg}
+\end{center}
+
+
+\end{columns}
+
+}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Acquisition et prétraitement de l'EEG}
+
+
+\only<1>{
+
+\begin{columns}
+\column{0.5\linewidth}
+Choix d'une référence:
 \begin{itemize}
-\item<1-> Cognitive neurosciences is the scientific field that is concerned with the study of the biological processes and aspects that underlie cognition, with a specific focus on the neural connections in the brain which are involved in mental processes.
-\item <2-> It addresses the questions of how cognitive activities are affected or controlled by neural circuits in the brain.
+  \item L'EEG mesure une différence de potentiel entre deux points
+  \item Idéal (mythe!) : référence "silencieuse" (cf. Nunez)
+  \item Nasion, mastoïdes, lobes, Cz, moyenne des électrodes, \dots
 \end{itemize}
+
+
+\column{0.5\linewidth}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{images/eeg_ref.png}
+\end{center}
+
+\end{columns}
+
+
+}
+
+\only<2>{
+
+\begin{columns}
+\column{0.5\linewidth}
+Le système 10-20 de placement d'électrodes:
+%\begin{itemize}
+%  \item Placement standards des électrodes
+%  \item Idéal (Mythe!) : choisir une référence "silencieuse"
+%  \item Nasion, mastoïdes, lobes, Cz, moyenne des électrodes, \dots
+%\end{itemize}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/1020_2.png}
+\end{center}
+
+\column{0.5\linewidth}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/1020.png}
+\end{center}
+
+\end{columns}
+
+
+}
+
+
+\only<3>{
+Exemple d'enregistrement
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{images/eeg_exemple.jpg}
+\end{center}
+
+\tiny{Electroencephalography (EEG): An Introductory Text and Atlas of Normal and Abnormal Findings in Adults, Children, and Infants}
+
+
+}
+
+
+
+\only<4-5>{
+Prétraitements usuels
+\begin{enumerate}
+  \item Re-référencement
+  \item Suppression de segments largement bruités
+  \item Suppression de dérive de basse fréquence (filtre passe-haut)
+  \alert<5>{\item Détection et suppression d'artefacts}
+\end{enumerate}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{images/eeg_exemple_2.jpg}
+\end{center}
+
+\tiny{\url{FrontalCortex.com}}
+
+
+}
+
+
+
+\only<6>{
+Artefacts 
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{images/eeg_bio_artefacts.png}
+
+\includegraphics[width=0.4\textwidth]{images/eeg_artefacts_2.png}
+\end{center}
+
+\tiny{Review of Artifact Rejection Methods for Electroencephalographic Systems, S Kanoga, Y Mitsukura - Electroencephalography, 2017}
+
+
+}
+
 \end{frame}
 
-\subsection{What is experimental design?}
+
+\section{Fondements de la conception expérimentale}
+\subsection{Notions clés}
+
 
 \begin{frame}
-\frametitle{What is experimental design?}
-\begin{itemize}
-\item<1-> An experimental design is a planned experiment set up to test the validity of a hypothesis.
-\item <2-> An experimental design is a way to carefully plan experiments in advance.
-\end{itemize}
+  \frametitle{Plan}
+  \tableofcontents[currentsection]
+
 \end{frame}
 
-
-\subsection{Cognitive neurosciences and Music}
-
 \begin{frame}
-  \frametitle{Cognitive neurosciences and Music}
+  \frametitle{Notions clés}
+  \begin{block}{Variables}
+    \begin{itemize}
+      \item Variable \textit{indépendante}
+      \item Variable \textit{dépendante}
+      \item \textit{Covariée}
+    \end{itemize}
+  \end{block}
+  \uncover<2>{
+  \begin{block}{Groupes}
+    \begin{itemize}
+      \item Groupe expérimental
+      \item Groupe contrôle
+    \end{itemize}
+  \end{block}
+  }
+
 \end{frame}
 
-\section{Fundamentals of experimental design}
-\subsection{Dependent and independent variables}
+\subsection{Types de conception expérimentale}
 
 \begin{frame}
-  \frametitle{Fundamentals of experimental design}
-\end{frame}
+  \frametitle{Types de conception expérimentale}
 
-\subsection{Experimental groups and control groups}
+  \begin{block}{Conception entre-sujets}
+    \begin{itemize}
+      \item<1-> Chaque sujet ne participe qu'à une seule condition expérimentale
+      \item<2-> Exemple : 2 groupes de sujets, un groupe écoute de la musique, l'autre non
+    \end{itemize}
+  \end{block}
 
-\begin{frame}
-  \frametitle{Experimental groups}
-\end{frame}
-
-\subsection{Types of experimental design}
-
-\begin{frame}
-  \frametitle{Types of experimental design}
+  \begin{block}{Conception intra-sujets}
+    \begin{itemize}
+      \item<3-> Chaque sujet participe à toutes les conditions expérimentales
+      \item<4-> Exemple : chaque sujet écoute de la musique à certains moments, puis ne l'écoute pas à d'autres.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \section{Examples}
@@ -149,10 +381,18 @@
 \subsection{What's next ?}
 
 
-\begin{frame}
-  \frametitle{What's next ?}
-\end{frame}
 
+\begin{frame}
+  \frametitle{Et ensuite ?}
+  Séances : 
+  \begin{enumerate}
+  \item 16/01 matin : Neurosciences et neuromythes (D. Toquet).\\ après-midi : Pratique Musicale (C. Rocher)
+  \item 23/01 matin : Introduction to Experimental Design (N. Farrugia). \\ après-midi : Pratique Musicale (C. Rocher)
+  \item 30/01 Expériences EEG
+  \item 06/02 matin : Analyse de données EEG (N. Farrugia). \\après-midi : Pratique Musicale (C. Rocher)
+  \item 13/02 soir : restitution au Cabaret Vauban 
+  \end{enumerate}
+  \end{frame}
 % \begin{frame}
 % \frametitle{Introduction}
 % \begin{itemize}

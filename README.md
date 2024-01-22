@@ -1,6 +1,13 @@
 # exp-design
 Material for course on experimental design at ENIB / IMT Atlantique
 
+# Other courses on Experimental design
+
+From [LRI, Caroline Appert](https://www.lri.fr/~appert/eval/classes/1-experimental-design.pdf)
+
+From [Kansas State University](https://bae.engg.ksu.edu/~zifeiliu/files/fac_zifeiliu/Zifeiliu/BAE815_Liu_07_experimental%20design_1.pdf)
+
+
 ## Papers to study 
 
 1. [Hashim, S., Pulcini, C., Jansari, A., Küssner, M. B., & Omigie, D. (2024). The Experience of Music in Aphantasia: Emotion, Reward, and Everyday Functions. Music & Science, 7.](https://doi.org/10.1177/20592043231216259)
