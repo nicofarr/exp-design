@@ -170,7 +170,7 @@ Une vue d'ensemble de l'origine (probable) de l'EEG.
  \column{.5\linewidth}
  Quelques caractéristiques clés de l'EEG
  	\begin{itemize}
- 		\item Tension (V) entre une électrode sur le scalp et une référence
+ 		\item Tension (V) entre une électrode sur le cuir chevelu et une référence
     \item Propagation du champ électrique dans plusieurs milieux
  		\item Signal résultant de l'activité coordonnée de groupes de millons de neurones
  		\item De 0.1 à 100 Hz, de l'ordre de 0.025 à 0.1 mV 
@@ -331,11 +331,11 @@ Artefacts
    Une supposition ou une explication proposée faite sur la base de preuves limitées comme point de départ pour une enquête plus approfondie
   \end{block}
 
-  \uncover<2>{Propriétés d'une hypothèse :
+  \uncover<2>{Exigences d'une hypothèse :
   \begin{itemize}
-    \item Elle doit être testable : on doit pouvoir en manipuler les facteurs et/ou mesurer la variable dépendante
-    \item Elle doit être falsifiable : il doit être possible de la réfuter avec des données
-    \item Elle doit être précise : on doit pouvoir en définir les termes et conditions de manière spécifique (opéralionalisée).
+    \item \textbf{Testabilité} : on doit pouvoir en manipuler les facteurs et en mesurer l'effet
+    \item \textbf{Falsifiabilité} : il doit être possible de la réfuter avec des données
+    \item \textbf{Précision} : on doit pouvoir en définir les termes et conditions de manière spécifique (opéralionalisée).
   \end{itemize}}
 
 
@@ -343,21 +343,22 @@ Artefacts
 \end{frame}
 
 \begin{frame}
-  \frametitle{Tester une hypothèse}
-  L'expérimentateur manipule des variables indépendantes et mesure des variables dépendantes.
+  \frametitle{Tester une hypothèse 1/2}
   \begin{block}{Variables}
     \begin{itemize}
-      \item Variable \textit{indépendante} = facteur que l'on teste, doit être manipulable
-      \item<2-> Variable \textit{dépendante} = mesure effectuée, doit être observable
+      \item Variable \textit{indépendante} = facteur que l'on teste, doit être manipulable (conditions expérimentales)
+      \item<2-> Variable \textit{dépendante} = mesure effectuée, doit être observable (ex : comportement, performance, activité cérébrale\dots)
       \item<3-> \textit{Covariée} = variable qui peut influencer la variable dépendante, doit être contrôlée (ex : âge, sexe, \dots) ou son influence doit être limitée (ex : randomisation)
     \end{itemize}
   \end{block}
   \uncover<4>{
+
   \begin{block}{Groupes}
     \begin{itemize}
-      \item Groupe expérimental
-      \item Groupe contrôle
+      \item Groupe expérimental : sujet à la manipulation expérimentale (variable indépendante)
+      \item Groupe contrôle : pas de manipulation expérimentale (e.g. influence des covariés)
     \end{itemize}
+    
   \end{block}
   }
 
@@ -366,48 +367,107 @@ Artefacts
 \subsection{Types de conception expérimentale}
 
 \begin{frame}
-  \frametitle{Types de conception expérimentale}
+  \frametitle{Tester une hypothèse 2/2}
 
-  \begin{block}{Conception entre-sujets}
+
+  \begin{block}{Types de conception}
     \begin{itemize}
-      \item<1-> Chaque sujet ne participe qu'à une seule condition expérimentale
-      \item<2-> Exemple : 2 groupes de sujets, un groupe écoute de la musique, l'autre non
+      \item<1-> Chaque sujet ne participe qu'à une seule condition expérimentale ("Within-subjects" / "Repeated measures")
+      \item<2-> Chaque sujet participe à toutes les conditions expérimentales ("Between-subjects")
     \end{itemize}
   \end{block}
+  
 
-  \begin{block}{Conception intra-sujets}
+  \uncover<3->{
+
+  \begin{block}{Hypothèse nulle et hypothèse alternative}
     \begin{itemize}
-      \item<3-> Chaque sujet participe à toutes les conditions expérimentales
-      \item<4-> Exemple : chaque sujet écoute de la musique à certains moments, puis ne l'écoute pas à d'autres.
+      \item \textit{Hypothèse nulle $H_0$} = pas de différence entre les conditions expérimentales / groupes.
+      \item \textit{Hypothèse alternative $H_1$} = différence.
     \end{itemize}
+    
   \end{block}
+
+
+
+  }
+  \uncover<4->{
+
+
+
+  \begin{block}{Tests d'hypothèse}
+    Utilisation de \textbf{Tests statistiques} sur la variable dépendante pour tester / rejeter $H_0$ (soutenir $H_1$).
+  \end{block}
+  }
+  
 \end{frame}
 
-\section{Examples}
-\subsection{Reading time ! Cognitive Neurosciences studies}
+
+\begin{frame}
+  \frametitle{Pour approfondir\dots}
+
+  Types de conception expérimentale, tester plusieurs facteurs simultanément, etc.
+  \begin{itemize}
+    \item Design factoriel, mixte, contrebalancé, \dots
+    \item Tenir compte de l'effet de l'ordre, de la répétition
+    \item Randomisation
+    \item Validité interne et externe
+    \item Causalité et corrélation
+    \item \dots
+  \end{itemize}
+
+  \url{www.lri.fr/~appert/eval/classes/1-experimental-design.pdf}
+
+\end{frame}
+
+\section{Exemples}
+\subsection{Lectures - Musique et Neurosciences cognitives}
+
+
+\begin{frame}
+  \frametitle{Plan}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
 
 \begin{frame}
   \frametitle{Articles}
+  Sélection d'articles de la revue \textit{Music \& Science} de 2022 à 2024. 
+
+  Allez sur : 
+
+  \url{https://github.com/nicofarr/exp-design}
+
 \end{frame}
 
-\subsection{Discussion}
+\subsection{Restitution}
 
 \begin{frame}
   \frametitle{Discussion}
+  7 minutes de restitution par article, puis discussion en 5 minutes.
 \end{frame}
 
 
-\section{Experimental design in practice}
-\subsection{Practice time ! Design your own experiment}
+\section{Projet Brain Songs}
+
+\begin{frame}
+  \frametitle{Plan}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+
+\subsection{Travail précédent dans le projet Brain Songs}
+
+\begin{frame}
+  \frametitle{Projet Brain Songs}
+\end{frame}
+
+\subsection{Concevoir votre expérience pour l'Intersemestre}
 
 \begin{frame}
   \frametitle{Design your own experiment}
-\end{frame}
-
-\subsection{Presentations / Discussion}
-
-\begin{frame}
-  \frametitle{Presentations / Discussion}
 \end{frame}
 
 

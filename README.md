@@ -1,5 +1,5 @@
 # exp-design
-Material for course on experimental design at ENIB / IMT Atlantique
+Cours sur l'introduction à la conception expérimentale. Intersemestre "Musique et Neurosciences", ENIB / IMT Atlantique, Janvier 2024. 
 
 # Other courses on Experimental design
 
@@ -9,6 +9,8 @@ From [Kansas State University](https://bae.engg.ksu.edu/~zifeiliu/files/fac_zife
 
 
 ## Papers to study 
+
+Slides à préparer [ici](https://docs.google.com/presentation/d/1pa7mH0iSxvnqRMteBIUkBk7eKs8t4U6AmHsVUt1h00Y/edit?usp=sharing)
 
 1. [Hashim, S., Pulcini, C., Jansari, A., Küssner, M. B., & Omigie, D. (2024). The Experience of Music in Aphantasia: Emotion, Reward, and Everyday Functions. Music & Science, 7.](https://doi.org/10.1177/20592043231216259)
 
