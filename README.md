@@ -1,5 +1,11 @@
-# exp-design
+# Introduction à la conception Expérimentale
 Cours sur l'introduction à la conception expérimentale. Intersemestre "Musique et Neurosciences", ENIB / IMT Atlantique, Janvier 2024. 
+
+# Transparents
+
+Les transparents du cours sont [ici](talk.pdf). 
+
+Des transparents sur le projet Brain Songs sont [ici](2303_RencontresRessac.pdf)
 
 # Other courses on Experimental design
 
