@@ -7,14 +7,13 @@ Les transparents du cours sont [ici](talk.pdf).
 
 Des transparents sur le projet Brain Songs sont [ici](2303_RencontresRessac.pdf)
 
-# Other courses on Experimental design
-
+# Ressources
 From [LRI, Caroline Appert](https://www.lri.fr/~appert/eval/classes/1-experimental-design.pdf)
 
 From [Kansas State University](https://bae.engg.ksu.edu/~zifeiliu/files/fac_zifeiliu/Zifeiliu/BAE815_Liu_07_experimental%20design_1.pdf)
 
 
-## Papers to study 
+## Articles à étudier 
 
 Slides à préparer [ici](https://docs.google.com/presentation/d/1pa7mH0iSxvnqRMteBIUkBk7eKs8t4U6AmHsVUt1h00Y/edit?usp=sharing)
 
